@@ -7,7 +7,7 @@ ARTWORK_DATA = {
     "Back":"./sample_data/artworks/red.png",
     "Sleeve":"./sample_data/artworks/red.png",
     "Hood":"./sample_data/artworks/red.png",
-    "Neck":"./sample_data/artworks/red.png",
+    "Mug":"./sample_data/artworks/red.png",
 }
 
 MOCKUP_DATA = [
@@ -36,9 +36,11 @@ MOCKUP_DATA = [
      ]},
     {
         "side_name": "BackTshirt1",
-        "background_default":"./sample_data/mask_part/Tshirt/background_default.png",
-        "shadow_image":"./sample_data/mask_part/Tshirt/back.png",
         "parts": [
+            {
+                "name": "",
+                "cut_image_path": "./sample_data/mask_part/Tshirt/background_default.png",
+            },
             {
                 "name": "back.Back",
                 "model_path": "./sample_data//models/Tshirt/tshirt.back.model.npy",
@@ -67,6 +69,10 @@ MOCKUP_DATA = [
                 "cut_image_path": "./sample_data/mask_part/Tshirt/back.Neck.png",
                 "shadow_image": "",  # can be None
                 "artwork_side": "Front"
+            },
+            {
+                "name": "",
+                "cut_image_path": "./sample_data/mask_part/Tshirt/back.Back.png",
             },
 ]}
 ]
